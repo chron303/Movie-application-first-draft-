@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# 🎬 Movie Mobile App (Expo + Appwrite)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A movie discovery mobile application built with **Expo**, **Expo Router**, and **Appwrite**.  
+This repository contains the **first draft** of the project, focusing on navigation, UI structure, and backend integration.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Tech Stack
 
-   ```bash
-   npm install
-   ```
+- **Expo (React Native)**
+- **Expo Router** – file-based routing
+- **Appwrite** – backend (database & analytics)
+- **TMDB API** – movie data
+- **NativeWind / Tailwind CSS** – styling
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📱 Features (Current Draft)
 
-In the output, you'll find options to open the app in a
+- Movie listing UI
+- Dynamic movie detail pages
+- Tab-based navigation
+- Search tracking stored in Appwrite
+- Trending movies based on search frequency
+- Custom icons, images, and fonts
+- File-based routing with Expo Router
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+> ⚠️ This is an early draft. Structure and features will evolve.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📁 Project Structure
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🔧 Environment Variables
 
-To learn more about developing your project with Expo, look at the following resources:
+Create a `.env` file in the project root (this file is **ignored by Git**):
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+EXPO_PUBLIC_MOVIE_API_KEY=your_tmdb_api_key
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_appwrite_project_id
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_database_id
+EXPO_PUBLIC_APPWRITE_COLLECTION_ID=metrics
 
-## Join the community
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## ▶️ Getting Started
+
+### 1️⃣ Install dependencies
+
+npm install
+
+
+### 2️⃣ Start the development server
+
+npx expo start
+
+
+You can run the app using:
+- Expo Go (Android)
+- Android Emulator
+- USB debugging (ADB reverse) for restricted networks
+
+---
+
+## 🧠 Important Notes
+
+- This project uses **Expo Router**, so there is **no `App.tsx`**
+- Entry point is handled via:
+
+import 'expo-router/entry';
+
+- Appwrite uses **region-specific endpoints**
+- `.env` must never be committed
+
+---
+
+## 🛠️ Planned Improvements
+
+- Authentication
+- Watchlist / saved movies
+- Skeleton loaders
+- Better error handling
+- Performance optimizations
+- UI/UX improvements
+- Production builds
+
+---
+
+## 📌 Project Status
+
+🟡 **Active Development — First Draft**
+
+This repository represents a checkpoint before major refactors and feature additions.
+
+---
+
+## 📄 License
+
+MIT (subject to change)
+
+
+
+
+
