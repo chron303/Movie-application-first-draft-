@@ -1,11 +1,11 @@
-# 🎬 Movie Mobile App (Expo + Appwrite)
+# Movie Mobile App (Expo + Appwrite)
 
 A movie discovery mobile application built with **Expo**, **Expo Router**, and **Appwrite**.  
 This repository contains the **first draft** of the project, focusing on navigation, UI structure, and backend integration.
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Expo (React Native)**
 - **Expo Router** – file-based routing
@@ -15,7 +15,7 @@ This repository contains the **first draft** of the project, focusing on navigat
 
 ---
 
-## 📱 Features (Current Draft)
+## Features (Current Draft)
 
 - Movie listing UI
 - Dynamic movie detail pages
@@ -25,17 +25,17 @@ This repository contains the **first draft** of the project, focusing on navigat
 - Custom icons, images, and fonts
 - File-based routing with Expo Router
 
-> ⚠️ This is an early draft. Structure and features will evolve.
+> This is an early draft. Structure and features will evolve.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 
 
 ---
 
-## 🔧 Environment Variables
+## Environment Variables
 
 Create a `.env` file in the project root (this file is **ignored by Git**):
 
@@ -47,14 +47,14 @@ EXPO_PUBLIC_APPWRITE_COLLECTION_ID=metrics
 
 ---
 
-## ▶️ Getting Started
+## Getting Started
 
-### 1️⃣ Install dependencies
+### Install dependencies
 
 npm install
 
 
-### 2️⃣ Start the development server
+### Start the development server
 
 npx expo start
 
@@ -66,7 +66,7 @@ You can run the app using:
 
 ---
 
-## 🧠 Important Notes
+## Important Notes
 
 - This project uses **Expo Router**, so there is **no `App.tsx`**
 - Entry point is handled via:
@@ -78,7 +78,7 @@ import 'expo-router/entry';
 
 ---
 
-## 🛠️ Planned Improvements
+## Planned Improvements
 
 - Authentication
 - Watchlist / saved movies
@@ -90,15 +90,15 @@ import 'expo-router/entry';
 
 ---
 
-## 📌 Project Status
+## Project Status
 
-🟡 **Active Development — First Draft**
+ **Active Development — First Draft**
 
 This repository represents a checkpoint before major refactors and feature additions.
 
 ---
 
-## 📄 License
+## License
 
 MIT (subject to change)
 
